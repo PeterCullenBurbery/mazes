@@ -232,6 +232,15 @@ topPartDeletedGraph,
 verticesToKeep, 
      opts]
    ];
+PositiveIntegerQ[
+   
+Pattern[n, 
+Blank[]]] := 
+  Apply[And, {IntegerQ[
+     n], 
+    TrueQ[Element[
+      n, 
+      PositiveIntegers]]}];
 (* ::Section::Closed:: *)
 (*Package Footer*)
 
