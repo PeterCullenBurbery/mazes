@@ -13,7 +13,7 @@ BeginPackage["PeterBurbery`Mazes`"];
 
 TriangularGridGraph;
 GeneralizedTriangularGridGraph;
-
+HexagonalGridGraph;
 Begin["`Private`"];
 
 
@@ -25,6 +25,66 @@ Begin["`Private`"];
 (*Define your public and private symbols here:*)
 
 
+HexagonalGridGraph[{Pattern[
+     wide, 
+Blank[Integer]] ? Positive, 
+    Pattern[high, 
+Blank[Integer]] ? Positive}, 
+   opts : 
+    OptionsPattern[Graph]] := Module[
+       {cells, 
+    edges, 
+    vertices},
+       cells = 
+    Flatten[
+             Table[
+                  CirclePoints[
+                       {
+                            
+        Sqrt[3] * (((2 * 
+               j)
+ + k) - 2),
+                            (3 * 
+           k) - 
+         2
+                        },
+                       {2, Pi / 2},
+                       6
+                   ],
+                  {j, 
+       wide},
+                  {k, 
+       high}
+              ],
+             1
+         ];
+       edges = 
+    Union[
+             Map[Sort,
+                  
+      Flatten[Map[Partition[#, 2, 1, 1] &, 
+        cells], 1]
+              ]
+         ];
+       vertices 
+= Union @ 
+     Flatten[
+edges, 1];
+       IndexGraph[
+            
+    Graph[UndirectedEdge @@@ 
+      edges,
+                 
+     opts,
+                 
+     VertexCoordinates -> 
+      Thread[
+vertices -> 
+        vertices]
+
+             ]
+        ]
+   ];
 
 TriangularGridGraph[
    Pattern[n0, 
