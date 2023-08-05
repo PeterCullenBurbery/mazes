@@ -1,0 +1,437 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16263,        429]
+NotebookOptionsPosition[     11485,        326]
+NotebookOutlinePosition[     12010,        344]
+CellTagsIndexPosition[     11967,        341]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["NewMazePaclet", "GuideTitle",
+ CellID->315055575,ExpressionUUID->"22005e69-9b5a-41da-9e71-6c83fe4771f7"],
+
+Cell["XXXX", "GuideAbstract",
+ CellID->28442112,ExpressionUUID->"71118f84-bae0-4058-a903-12d50fdf7685"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "GuideFunctionsSection",
+ CellID->909820117,ExpressionUUID->"b711fec3-d7ba-46fc-98b8-fc1df4994217"],
+
+Cell[CellGroupData[{
+
+Cell["Maze functions", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.9001860710844326`*^9, 3.900186073028132*^9}},
+ CellID->608872920,ExpressionUUID->"a88023f2-46f6-4aaf-b4c6-f69c32385180"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SolveMaze",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePacletzePaclet/ref/SolveMaze"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "07d79d50-5880-410d-9247-2a4a6d18fc30"],
+ " \[LongDash] solve a maze"
+}], "GuideText",
+ CellChangeTimes->{{3.9001813235173593`*^9, 3.9001813311369495`*^9}, {
+  3.9001863603593664`*^9, 3.9001863623210497`*^9}},
+ CellID->3086061,ExpressionUUID->"50ed5a35-3e13-46ea-8543-0298f02b1cff"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["MakeMaze",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePacletzePaclet/ref/MakeMaze"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "5ae5c3ac-9bd1-4812-8698-2cb54c004ece"],
+ " \[LongDash] make a maze"
+}], "GuideText",
+ CellChangeTimes->{{3.9001813337150664`*^9, 3.900181337306658*^9}, {
+  3.900186363730225*^9, 3.900186365127211*^9}},
+ CellID->20337884,ExpressionUUID->"f84be732-51b6-4423-bb31-383c0f9d41f4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["MakeMazePicture",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/MakeMazePicture"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"1e594483-c865-4519-afde-506c7b2019c3",ExpressionUUID->
+  "3ab6993b-184f-4da6-b2d0-8aefd645d8fe"],
+ " \[LongDash] make a picture of a maze"
+}], "GuideText",
+ CellChangeTimes->{{3.9001813413054314`*^9, 3.9001813516315937`*^9}, {
+  3.9001863668106737`*^9, 3.9001863701304736`*^9}},
+ CellID->32853700,ExpressionUUID->"8d06a45e-04dc-4027-8e66-414b88e45034"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["MakePictureMaze",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/MakePictureMaze"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"8ee36361-e0bd-498c-b4ff-50eb6b6eccb1",ExpressionUUID->
+  "7701728d-e2cb-4dba-a87e-87b8dabb5d25"],
+ " \[LongDash] make a picture of a maze"
+}], "GuideText",
+ CellChangeTimes->{{3.9002230618456683`*^9, 3.900223078193616*^9}},
+ CellID->38696745,ExpressionUUID->"5edb0ec2-6223-4146-9b3f-a2e332f8fa63"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["FromMazePictureToMaze",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/FromMazePictureToMaze"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"1e594483-c865-4519-afde-506c7b2019c3",ExpressionUUID->
+  "30a9d287-1d41-4c66-9a63-6047d38858fd"],
+ " \[LongDash] go from a picture of a maze to a maze represented by a graph"
+}], "GuideText",
+ CellChangeTimes->{{3.900181356532557*^9, 3.9001813648270216`*^9}, {
+  3.9001863730627766`*^9, 3.9001863816119876`*^9}},
+ CellID->73979097,ExpressionUUID->"1d3ffae1-7f57-40a3-8585-77984b631989"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Generating Graphs", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.90018606063568*^9, 3.90018606297777*^9}},
+ CellID->378295606,ExpressionUUID->"bb99b8b9-246d-46a8-914b-ade52262d922"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["EquilateralTriangleGraph",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/EquilateralTriangleGraph"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"bf9cd698-b530-4393-92df-b371a20cc482",ExpressionUUID->
+  "f9d726df-3c7a-4e10-b334-5ca1f905b4b1"],
+ " \[LongDash] make an equilateral triangle"
+}], "GuideText",
+ CellChangeTimes->{{3.9001860371148424`*^9, 3.900186050238903*^9}, {
+  3.9001865871172028`*^9, 3.900186590885851*^9}},
+ CellID->503774435,ExpressionUUID->"7a3ec39c-9b19-4ee3-8d29-75502ef0f939"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["TriangularGridGraph",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/TriangularGridGraph"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"1e594483-c865-4519-afde-506c7b2019c3",ExpressionUUID->
+  "59372c1f-0ae2-4cdf-bef6-972c1987ff3c"],
+ " \[LongDash] make a triangular grid"
+}], "GuideText",
+ CellChangeTimes->{{3.9001814356834817`*^9, 3.900181458224543*^9}, {
+  3.900186593697525*^9, 3.9001865978132753`*^9}},
+ CellID->47480122,ExpressionUUID->"64e61363-9fed-4a8a-8698-fe4cdc6814df"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["HexagonalGridGraph",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/HexagonalGridGraph"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"1e594483-c865-4519-afde-506c7b2019c3",ExpressionUUID->
+  "e03897b5-52dd-4d3d-be92-157ce75cf90e"],
+ " \[LongDash] make a hexagonal grid"
+}], "GuideText",
+ CellChangeTimes->{{3.900181380394267*^9, 3.9001813871279554`*^9}, {
+  3.9001866000828915`*^9, 3.90018660279678*^9}},
+ CellID->243489558,ExpressionUUID->"fdd4a174-c150-47c2-80fd-df3b7e42fabc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Analyzing mazes", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.9001860768358183`*^9, 3.9001860790912304`*^9}},
+ CellID->676612370,ExpressionUUID->"d29706b0-df27-4c8f-9efe-7b8c29bdfd7a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ContractTree",
+   BaseStyle->"Link",
+   ButtonData->"paclet:PeterBurbery/NewMazePaclet/ref/ContractTree"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"bf9cd698-b530-4393-92df-b371a20cc482",ExpressionUUID->
+  "e6e1fb8f-49c6-4bf1-a6cb-7d2825afeb3d"],
+ " \[LongDash] ",
+ Cell[BoxData[
+  TagBox[
+   TagBox[
+    FrameBox["description"],
+    "GuideTextPlaceholder"],
+   EventHandlerTag[{"MouseClicked" :> SelectionMove[
+       EvaluationCell[], All, Cell], Method -> "Preemptive", PassEventsDown -> 
+     Automatic, PassEventsUp -> True}]]],ExpressionUUID->
+  "597d7c78-0cff-41bf-854f-fe60433f594c"]
+}], "GuideText",
+ CellChangeTimes->{{3.900186087378999*^9, 3.900186101901266*^9}},
+ CellID->44469178,ExpressionUUID->"9a244613-c1ff-43c3-b98c-1abd32c9368a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\t", "GuideDelimiter",
+ CellID->267489523,ExpressionUUID->"fcb62249-26de-4644-9334-c730edea507e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "92f75091-4e4f-4843-b542-bef68e5ebd8b"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "0fd40e44-3422-4317-acc1-89c58f4aa8d4"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "f5b3c8c8-b873-4df0-ba04-495bc4c3074d", 
+     "594c6c5b-5c9e-4ae3-bdc2-a0f2a2cf268b"], $CellContext`cellobj$$ = 
+    CellObject[
+    "9ed93f8d-5e42-421b-ac3d-731b525476a9", 
+     "5af64154-8c87-4e84-a0dc-741235271d5f"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "9ed93f8d-5e42-421b-ac3d-731b525476a9"]
+}], "InlineGuideFunctionListing",
+ CellID->786962321,ExpressionUUID->"0be4d6d9-be57-47d4-948b-36eff62b24b6"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tech Notes", "GuideTutorialsSection",
+ CellID->270644372,ExpressionUUID->"69bc66ef-9f54-479d-b14f-9260cf6a3f8d"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->22587012,ExpressionUUID->"ab609959-4047-47b4-80fa-ef387442290b"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->49082325,ExpressionUUID->"4d29d1b6-6b30-4b02-a422-884d33d05126"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "GuideMoreAboutSection",
+ CellChangeTimes->{{3.8430423939366693`*^9, 3.843042395176153*^9}},
+ CellID->270016336,ExpressionUUID->"ecb0a8f4-2780-4ca6-bc59-c4ce118cfe9d"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->470567203,ExpressionUUID->"d314caf1-b55c-4ac7-9f87-ad15fe99ad5b"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->3615023,ExpressionUUID->"9f6aaa4f-b421-44c6-a41a-7282c4372f9d"]
+}, Open  ]],
+
+Cell["Related Links", "GuideRelatedLinksSection",
+ CellID->103512170,ExpressionUUID->"c0d0c4a5-c460-4b5a-896e-cae0f817336f"],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->188686072,ExpressionUUID->"29b6f131-9946-472a-8dfa-cb3f2a5bb458"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"857c8250-a388-4f4d-b9f4-65f4c9fec528"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"76b6c64e-a0c1-46a4-8e90-980dd33c7c27"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"6e41bb71-5522-4071-84a1-d9b00e08a22e"]
+}], "History",
+ CellID->20340039,ExpressionUUID->"053dde82-d4e3-4e91-abed-2c283297ec5c"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->174407308,ExpressionUUID->"a26bde3c-cb46-4ecb-bc0f-d6e34acaec06"],
+
+Cell["Guide", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->474883388,ExpressionUUID->"e5190fec-5806-4368-9769-1c584a40a02b"],
+
+Cell["PeterBurbery/NewMazePaclet", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->31295149,ExpressionUUID->"2ebc0568-7219-492d-8d4d-811058bd2940"],
+
+Cell["PeterBurbery`NewMazePaclet`", "Categorization",
+ CellLabel->"Context",
+ CellID->184484288,ExpressionUUID->"a57cbcf3-a32e-448a-978b-c12572968b4f"],
+
+Cell["PeterBurbery/NewMazePaclet/guide/NewMazePaclet", "Categorization",
+ CellLabel->"URI",
+ CellID->25875426,ExpressionUUID->"1abbf571-9921-4743-923b-f89f0e1e2dd9"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->48253731,ExpressionUUID->"f1428bea-1f32-4451-b213-326e9fef98c5"],
+
+Cell["XXXX", "Keywords",
+ CellID->66617120,ExpressionUUID->"9e3462b4-08f7-409c-9d83-1595ff5fc0da"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{478, 521},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "PeterBurbery/NewMazePaclet"|>,
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (August 1, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"f5b3c8c8-b873-4df0-ba04-495bc4c3074d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 102, 1, 88, "GuideTitle",ExpressionUUID->"22005e69-9b5a-41da-9e71-6c83fe4771f7",
+ CellID->315055575],
+Cell[685, 25, 103, 1, 29, "GuideAbstract",ExpressionUUID->"71118f84-bae0-4058-a903-12d50fdf7685",
+ CellID->28442112]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[825, 31, 108, 1, 72, "GuideFunctionsSection",ExpressionUUID->"b711fec3-d7ba-46fc-98b8-fc1df4994217",
+ CellID->909820117],
+Cell[CellGroupData[{
+Cell[958, 36, 193, 2, 37, "GuideFunctionsSubsection",ExpressionUUID->"a88023f2-46f6-4aaf-b4c6-f69c32385180",
+ CellID->608872920],
+Cell[1154, 40, 560, 13, 26, "GuideText",ExpressionUUID->"50ed5a35-3e13-46ea-8543-0298f02b1cff",
+ CellID->3086061],
+Cell[1717, 55, 552, 13, 26, "GuideText",ExpressionUUID->"f84be732-51b6-4423-bb31-383c0f9d41f4",
+ CellID->20337884],
+Cell[2272, 70, 585, 13, 26, "GuideText",ExpressionUUID->"8d06a45e-04dc-4027-8e66-414b88e45034",
+ CellID->32853700],
+Cell[2860, 85, 530, 12, 26, "GuideText",ExpressionUUID->"5edb0ec2-6223-4146-9b3f-a2e332f8fa63",
+ CellID->38696745],
+Cell[3393, 99, 631, 13, 26, "GuideText",ExpressionUUID->"1d3ffae1-7f57-40a3-8585-77984b631989",
+ CellID->73979097]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4061, 117, 192, 2, 37, "GuideFunctionsSubsection",ExpressionUUID->"bb99b8b9-246d-46a8-914b-ade52262d922",
+ CellID->378295606],
+Cell[4256, 121, 604, 13, 26, "GuideText",ExpressionUUID->"7a3ec39c-9b19-4ee3-8d29-75502ef0f939",
+ CellID->503774435],
+Cell[4863, 136, 587, 13, 26, "GuideText",ExpressionUUID->"64e61363-9fed-4a8a-8698-fe4cdc6814df",
+ CellID->47480122],
+Cell[5453, 151, 584, 13, 26, "GuideText",ExpressionUUID->"fdd4a174-c150-47c2-80fd-df3b7e42fabc",
+ CellID->243489558]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6074, 169, 196, 2, 37, "GuideFunctionsSubsection",ExpressionUUID->"d29706b0-df27-4c8f-9efe-7b8c29bdfd7a",
+ CellID->676612370],
+Cell[6273, 173, 826, 21, 28, "GuideText",ExpressionUUID->"9a244613-c1ff-43c3-b98c-1abd32c9368a",
+ CellID->44469178]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7136, 199, 103, 1, 27, "GuideDelimiter",ExpressionUUID->"fcb62249-26de-4644-9334-c730edea507e",
+ CellID->267489523],
+Cell[7242, 202, 1670, 42, 28, "InlineGuideFunctionListing",ExpressionUUID->"0be4d6d9-be57-47d4-948b-36eff62b24b6",
+ CellID->786962321]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8961, 250, 118, 1, 74, "GuideTutorialsSection",ExpressionUUID->"69bc66ef-9f54-479d-b14f-9260cf6a3f8d",
+ CellID->270644372],
+Cell[9082, 253, 103, 1, 24, "GuideTutorial",ExpressionUUID->"ab609959-4047-47b4-80fa-ef387442290b",
+ CellID->22587012],
+Cell[9188, 256, 103, 1, 24, "GuideTutorial",ExpressionUUID->"4d29d1b6-6b30-4b02-a422-884d33d05126",
+ CellID->49082325]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9328, 262, 190, 2, 74, "GuideMoreAboutSection",ExpressionUUID->"ecb0a8f4-2780-4ca6-bc59-c4ce118cfe9d",
+ CellID->270016336],
+Cell[9521, 266, 105, 1, 24, "GuideMoreAbout",ExpressionUUID->"d314caf1-b55c-4ac7-9f87-ad15fe99ad5b",
+ CellID->470567203],
+Cell[9629, 269, 103, 1, 24, "GuideMoreAbout",ExpressionUUID->"9f6aaa4f-b421-44c6-a41a-7282c4372f9d",
+ CellID->3615023]
+}, Open  ]],
+Cell[9747, 273, 124, 1, 74, "GuideRelatedLinksSection",ExpressionUUID->"c0d0c4a5-c460-4b5a-896e-cae0f817336f",
+ CellID->103512170],
+Cell[CellGroupData[{
+Cell[9896, 278, 110, 1, 72, "MetadataSection",ExpressionUUID->"29b6f131-9946-472a-8dfa-cb3f2a5bb458",
+ CellID->188686072],
+Cell[10009, 281, 472, 11, 26, "History",ExpressionUUID->"053dde82-d4e3-4e91-abed-2c283297ec5c",
+ CellID->20340039],
+Cell[CellGroupData[{
+Cell[10506, 296, 122, 1, 70, "CategorizationSection",ExpressionUUID->"a26bde3c-cb46-4ecb-bc0f-d6e34acaec06",
+ CellID->174407308],
+Cell[10631, 299, 133, 2, 70, "Categorization",ExpressionUUID->"e5190fec-5806-4368-9769-1c584a40a02b",
+ CellID->474883388],
+Cell[10767, 303, 145, 2, 70, "Categorization",ExpressionUUID->"2ebc0568-7219-492d-8d4d-811058bd2940",
+ CellID->31295149],
+Cell[10915, 307, 143, 2, 70, "Categorization",ExpressionUUID->"a57cbcf3-a32e-448a-978b-c12572968b4f",
+ CellID->184484288],
+Cell[11061, 311, 149, 2, 70, "Categorization",ExpressionUUID->"1abbf571-9921-4743-923b-f89f0e1e2dd9",
+ CellID->25875426]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11247, 318, 109, 1, 70, "KeywordsSection",ExpressionUUID->"f1428bea-1f32-4451-b213-326e9fef98c5",
+ CellID->48253731],
+Cell[11359, 321, 98, 1, 70, "Keywords",ExpressionUUID->"9e3462b4-08f7-409c-9d83-1595ff5fc0da",
+ CellID->66617120]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
