@@ -141,6 +141,33 @@ MakeMaze[graph_?GraphQ] :=
          ]
    ]
 
+ReduceGraph // ClearAll
+
+ReduceGraph::usage = "ReduceGraph[ugraph] contracts vertices with a vertex degree of 2  in the undirected graph ugraph .\nReduceGraph[dgraph] contracts vertices with an in degree of 1 and out degree of 1 in the directed graph dgraph.";
+
+ReduceGraph[graph_?DirectedGraphQ, opts : OptionsPattern[Graph]] :=
+   Graph[
+      Fold[VertexContract[#1, List[First[AdjacencyList[#1, #2]], #2]]&,
+          graph, VertexList[graph, v_ /; And @@ {VertexInDegree[graph, v] === 
+         1, VertexOutDegree[graph, v] === 1}]]
+      ,
+      opts
+      ,
+      VertexCoordinates -> Automatic                                 
+              (*If the user changes the value of VertexCoordinates \
+         
+since opts appears before this their specification will take effect.*)
+   
+      ,
+      VertexLabels -> Automatic
+   ]
+
+ReduceGraph[graph_?UndirectedGraphQ, opts : OptionsPattern[Graph]] :=
+   Graph[Fold[VertexContract[#1, List[First[AdjacencyList[#1, #2]], #2
+      ]]&, graph, VertexList[graph, v_ /; And @@ {VertexDegree[graph, v] ===
+       2}]], opts, VertexCoordinates -> Automatic, VertexLabels -> Automatic
+      ]
+
 SolveMaze // ClearAll
 
 SolveMaze::usage = "SolveMaze[g] solves the maze represented by the graph g.";
