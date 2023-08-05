@@ -1,0 +1,44 @@
+<|
+    "Files"
+    ->
+    {
+        <|
+            "File"
+            ->
+            File[
+                "Kernel\\NewMazePaclet.wl"
+            ]
+            ,
+            "Hash"
+            ->
+            "b69cb6ace90adb7227371d2f19a16ce9f6c7b5ff4ebb9c07069fcd6b977a5026"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\Guides\\Mazes.nb"
+            ]
+            ,
+            "Hash"
+            ->
+            "271a152f4715f9842d686e893c64b6f89f4d48b8987f9791403d0fd0699eff60"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\Tutorials\\Mazes.nb"
+            ]
+            ,
+            "Hash"
+            ->
+            "28fa84d0eb0fb7d8263b876b219dadb6ea96539a5b1f7db210f233e5fea94c44"
+                
+        |>
+    }
+|>
