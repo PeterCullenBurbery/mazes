@@ -1,14 +1,16 @@
 (* ::Package:: *)
 
 (* ::Section:: *)
-
 (*Package Header*)
+
 
 BeginPackage["PeterBurbery`NewMazePaclet`"];
 
-(* ::Text:: *)
 
+
+(* ::Text:: *)
 (*Declare your public symbols here:*)
+
 
 TriangularGridGraph;
 
@@ -22,17 +24,21 @@ SolveMaze;
 
 EquilateralTriangleGraph;
 
+ReduceGraph;
+
 VertexCoordinateList;
 
 Begin["`Private`"];
 
-(* ::Section:: *)
 
+
+(* ::Section:: *)
 (*Definitions*)
 
-(* ::Text:: *)
 
+(* ::Text:: *)
 (*Define your public and private symbols here:*)
+
 
 helperFunctionTriangularGraph[{wide_, high_}, opts : OptionsPattern[Graph
    ]] :=
@@ -176,9 +182,11 @@ SolveMaze[m_?GraphQ] :=
    HighlightGraph[m, PathGraph @ FindShortestPath[m, First @ VertexList[
       m], Last @ VertexList[m]]]
 
-(* ::Section::Closed:: *)
 
+
+(* ::Section::Closed:: *)
 (*Package Footer*)
+
 
 End[];
 
