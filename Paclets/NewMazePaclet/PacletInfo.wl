@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Burbery",
     "License" -> "BSD-3-Clause",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.0.0",
+    "Version" -> "1.0.1",
     "WolframVersion" -> "13.3+",
     "PrimaryContext" -> "PeterBurbery`NewMazePaclet`",
     "Extensions" -> {
