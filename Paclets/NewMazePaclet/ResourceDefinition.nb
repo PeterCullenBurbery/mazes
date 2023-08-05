@@ -4458,13 +4458,14 @@ GitHub), you can provide the URL here.", "MoreInfoText"], Background ->
   "Source Control Repository", "SourceControlURL", "TemplateCellGroup"},
  CellID->221376991,ExpressionUUID->"0b6cdab2-e723-4240-983a-86e64fcce01f"],
 
-Cell["https://github.com/UserName/MyPaclet", "Text",
+Cell["https://github.com/PeterCullenBurbery/mazes", "Text",
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
        WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
        SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
    PassEventsDown -> False, PassEventsUp -> False},
+ CellChangeTimes->{3.900248503713274*^9},
  CellTags->{"DefaultContent", "TabNext"},
  CellID->75689085,ExpressionUUID->"25b5e785-eb78-402b-8fad-c7ddfe771851"]
 }, Open  ]],
@@ -4688,15 +4689,46 @@ concepts) that should be used to include the paclet in search results.",
  CellTags->{"Keywords", "TemplateCellGroup"},
  CellID->913860664,ExpressionUUID->"fc9db456-dfec-42b2-b224-277b960ef8e7"],
 
-Cell["keyword 1", "Item",
+Cell["recreational mathematics", "Item",
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
        WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
        SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
    PassEventsDown -> False, PassEventsUp -> False},
+ CellChangeTimes->{{3.9002485072428207`*^9, 3.9002485102326145`*^9}},
  CellTags->{"DefaultContent", "TabNext"},
- CellID->560424104,ExpressionUUID->"555548e2-bcc1-4479-84de-8626169294bb"]
+ CellID->560424104,ExpressionUUID->"555548e2-bcc1-4479-84de-8626169294bb"],
+
+Cell["graph theory", "Item",
+ CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
+       SelectedNotebook[], After, Cell]; NotebookFind[
+       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
+       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
+       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
+   PassEventsDown -> False, PassEventsUp -> False},
+ CellChangeTimes->{{3.9002485072428207`*^9, 3.90024851247742*^9}},
+ CellID->148287216,ExpressionUUID->"888394aa-8f3d-4efb-b200-50e9a981c864"],
+
+Cell["algorithms", "Item",
+ CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
+       SelectedNotebook[], After, Cell]; NotebookFind[
+       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
+       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
+       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
+   PassEventsDown -> False, PassEventsUp -> False},
+ CellChangeTimes->{{3.9002485072428207`*^9, 3.900248514122471*^9}},
+ CellID->3447618,ExpressionUUID->"92aa149b-c01e-4ad5-bc9f-1a8e779f0542"],
+
+Cell["mazes", "Item",
+ CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
+       SelectedNotebook[], After, Cell]; NotebookFind[
+       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
+       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
+       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
+   PassEventsDown -> False, PassEventsUp -> False},
+ CellChangeTimes->{{3.9002485072428207`*^9, 3.90024851515053*^9}},
+ CellID->429652213,ExpressionUUID->"5e905ebd-77e0-4e20-864d-ba404b6926b3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -5718,8 +5750,8 @@ WolframAlpha calls", "MoreInfoText"], Background -> GrayLevel[0.95],
                    FrameMargins -> 20, FrameStyle -> GrayLevel[0.9], 
                    RoundingRadius -> 5, ImageSize -> {
                     Scaled[0.65], Automatic}]], "MoreInfoText", Deletable -> 
-                 True, CellTags -> {
-                  "SectionMoreInfoDisclosuresWolframAccount"}, 
+                 True, 
+                 CellTags -> {"SectionMoreInfoDisclosuresWolframAccount"}, 
                  CellMargins -> {{66, 66}, {15, 15}}], 
                 HoldComplete[
                  EvaluationCell[]], "Click for more information"}, 
