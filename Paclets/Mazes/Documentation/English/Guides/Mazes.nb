@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     16268,        429]
+NotebookDataLength[     16263,        429]
 NotebookOptionsPosition[     11485,        326]
-NotebookOutlinePosition[     12015,        344]
-CellTagsIndexPosition[     11972,        341]
+NotebookOutlinePosition[     12010,        344]
+CellTagsIndexPosition[     11967,        341]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -214,10 +214,10 @@ Cell[TextData[{
     "0fd40e44-3422-4317-acc1-89c58f4aa8d4"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
     "f5b3c8c8-b873-4df0-ba04-495bc4c3074d", 
-     "85137dad-a20e-44b2-951e-99ca18a1c282"], $CellContext`cellobj$$ = 
+     "594c6c5b-5c9e-4ae3-bdc2-a0f2a2cf268b"], $CellContext`cellobj$$ = 
     CellObject[
     "9ed93f8d-5e42-421b-ac3d-731b525476a9", 
-     "8f601493-4f76-48d2-9637-f0ad6f3aec97"]}, 
+     "5af64154-8c87-4e84-a0dc-741235271d5f"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -324,8 +324,8 @@ Cell["XXXX", "Keywords",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{478, 525.5},
-WindowMargins->{{-4.5, Automatic}, {Automatic, 0}},
+WindowSize->{478, 521},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"Paclet" -> "PeterBurbery/Mazes"|>,
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (August 1, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStylesExt.nb", 
