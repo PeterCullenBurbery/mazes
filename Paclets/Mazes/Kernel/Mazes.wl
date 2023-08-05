@@ -20,7 +20,7 @@ PositiveIntegerQ;
 
 SolveMaze;
 
-TriangularGraph;
+EquilateralTriangleGraph;
 
 VertexCoordinateList;
 
@@ -58,8 +58,8 @@ HexagonalGridGraph[{Pattern[wide, Blank[Integer]] ? Positive, Pattern[
           -> Thread[vertices -> vertices]]]
    ];
 
-TriangularGraph[Pattern[n0, Blank[Integer]] ? NonNegative, opts : OptionsPattern[
-   Graph]] :=
+EquilateralTriangleGraph[Pattern[n0, Blank[Integer]] ? NonNegative, opts
+    : OptionsPattern[Graph]] :=
    Module[{n = n0 + 1, edges, tab},
       tab = TakeList[Range[Binomial[n + 1, 2]], Range @ n];
       edges = MapApply[UndirectedEdge, Union[Flatten[Map[Function[{Transpose[
@@ -70,7 +70,7 @@ TriangularGraph[Pattern[n0, Blank[Integer]] ? NonNegative, opts : OptionsPattern
          Table[{i - j / 2, (-j) * Sqrt[3] / 2}, {j, n}, {i, j}], 1]]
    ];
 
-GeneralizedTriangularGridGraph[input : {m_?PositiveIntegerQ, n_?PositiveIntegerQ
+TriangularGridGraph[input : {m_?PositiveIntegerQ, n_?PositiveIntegerQ
    }, opts : OptionsPattern[Graph]] :=
    Module[{vertexCoordinates, triangularGridGraph, vertices, vertexCoordinatesToVerticesAssociation,
        topPartDeletedGraph, subGraph, verticesToKeep},
