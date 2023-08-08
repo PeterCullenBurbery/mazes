@@ -52,6 +52,8 @@ helperFunctionTriangularGraph[{wide_, high_}, opts : OptionsPattern[Graph
           -> Thread[vertices -> vertices]]]
    ]
 
+HexagonalGridGraph::usage = "HexagonalGridGraph[{w,h}] creates a hexagonal grid graph that is w hexagons wide and h hexagons high.";
+
 HexagonalGridGraph[{Pattern[wide, Blank[Integer]] ? Positive, Pattern[
    high, Blank[Integer]] ? Positive}, opts : OptionsPattern[Graph]] :=
    Module[{cells, edges, vertices},
@@ -64,6 +66,8 @@ HexagonalGridGraph[{Pattern[wide, Blank[Integer]] ? Positive, Pattern[
           -> Thread[vertices -> vertices]]]
    ];
 
+EquilateralTriangleGraph::usage = "EquilateralTriangleGraph[n] creates an equilateral triangle graph with n vertices along each of the three edges.";
+
 EquilateralTriangleGraph[Pattern[n0, Blank[Integer]] ? NonNegative, opts
     : OptionsPattern[Graph]] :=
    Module[{n = n0 + 1, edges, tab},
@@ -75,6 +79,8 @@ EquilateralTriangleGraph[Pattern[n0, Blank[Integer]] ? NonNegative, opts
       Graph[Flatten @ Most @ tab, edges, opts, VertexCoordinates -> Flatten[
          Table[{i - j / 2, (-j) * Sqrt[3] / 2}, {j, n}, {i, j}], 1]]
    ];
+
+TriangularGridGraph::usage = "TriangularGridGraph[{m,n}] creates a triangular grid graph that is m units wide and n units high.";
 
 TriangularGridGraph[input : {m_?PositiveIntegerQ, n_?PositiveIntegerQ
    }, opts : OptionsPattern[Graph]] :=
@@ -98,6 +104,10 @@ TriangularGridGraph[input : {m_?PositiveIntegerQ, n_?PositiveIntegerQ
 PositiveIntegerQ[Pattern[n, Blank[]]] :=
    Apply[And, {IntegerQ[n], TrueQ[Element[n, PositiveIntegers]]}];
 
+PositiveIntegerQ::usage = "PositiveIntegerQ[n] tests if n is a strictly positive integer.";
+
+VertexCoordinateList::usage = "VertexCoordinateList[g] returns a list of the coordinates of the vertices of the graph g.";
+
 VertexCoordinateList[Pattern[g, Blank[]]] :=
    Part[GraphEmbedding @ g, Map[Last, Sort @ Transpose @ {VertexList 
       @ g, Range @ VertexCount @ g}]];
@@ -106,7 +116,7 @@ MakeMaze // ClearAll
 
 MakeMaze::usage = "MakeMaze[g] makes a maze out of the graph g.";
 
-MakeMaze[graph_?GraphQ] :=
+MakeMaze[graph_?GraphQ, opts : OptionsPattern[Graph]] :=
    Module[{m, g},
       g = graph;
       m =
@@ -143,7 +153,7 @@ MakeMaze[graph_?GraphQ] :=
             Last //
             First
             ,
-            VertexCoordinates -> GraphEmbedding[g]
+            VertexCoordinates -> GraphEmbedding[g],opts
          ]
    ]
 

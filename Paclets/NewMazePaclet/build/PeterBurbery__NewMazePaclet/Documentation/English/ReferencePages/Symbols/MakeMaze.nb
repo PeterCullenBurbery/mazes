@@ -1,0 +1,292 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11033,        282]
+NotebookOptionsPosition[      7978,        214]
+NotebookOutlinePosition[     10095,        268]
+CellTagsIndexPosition[     10011,        263]
+WindowTitle->MakeMaze
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ NEW MAZE PACLET SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "e9b542d7-ce07-4576-83ea-f8ab396ce2a4"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "7433d45c-ba8d-4e30-be7c-31fd812d85e7"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "a8776f73-7414-4ecd-8027-76bcba99057f"]
+        }],ExpressionUUID->"0400ffb7-6a6f-43b3-a36a-3748de458dca"],
+        StripOnInput->False],{
+       "\"PeterBurbery/NewMazePaclet/ref/MakeMaze\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PeterBurbery/NewMazePaclet/ref/MakeMaze"]}, 
+              Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PeterBurbery/\
+NewMazePaclet/ref/MakeMaze.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$62664], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PeterBurbery/NewMazePaclet/ref/MakeMaze" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "4ea9d9d6-4484-42b1-a69d-a3eb743ad72f"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "fc7b1963-a2ca-4505-8c65-1ca8e369233c"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"8c4e2dcb-b824-433e-8c4c-cebd978062c0"],
+
+Cell["PeterBurbery`NewMazePaclet`", "ContextNameCell",ExpressionUUID->"60fbd270-6b3c-47d7-ac0d-bab08d6b5e44"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "MakeMaze", "ObjectName",ExpressionUUID->
+      "a8b6a89a-2140-42e8-ac6f-d936e53ddbfd"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"7b4c1e70-dab8-4417-a88e-f032bb1eddc9"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "837cc155-8986-417f-b298-a9e9523a61ce"]
+    }],ExpressionUUID->"5bb15a96-ada3-4f6d-b910-2185da3aaa4c"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"774efdb6-8dd9-476c-a4b5-\
+2f7c97e04b7a"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["MakeMaze"]], 
+         "paclet:PeterBurberyNewMazePaclet/ref/MakeMaze", 
+         "PeterBurberyNewMazePaclet Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["g", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "303d3a29-edbe-4c89-b52f-0c7cff43518a"],
+     "\[LineSeparator]makes a maze out of the graph g."
+    }],ExpressionUUID->"39b95a40-7edf-4515-b5ea-107814b30323"]}
+  }]], "Usage",
+ CellID->461648265,ExpressionUUID->"a3e6e1dd-5837-4dc2-a81e-5d9f47df3f1b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"2f81830a-2b75-458a-902e-88d4e59c7569"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"2505d9c6-ca97-4074-be80-792826880b50"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "074d9d1d-5db7-41c7-909b-9f331143ab30"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->130807863,ExpressionUUID->"28295cd6-7918-4e8a-b01c-18846b0a4233"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`NewMazePaclet`\>\"", "]"}]], "Input",\
+ "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->124374320,ExpressionUUID->"255ec9ea-aefd-444c-9b37-2636168af543"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]},
+      {Cell[TextData[Cell[BoxData[
+        TagBox[
+         FrameBox["\"\<XXXX\>\""],
+         "FunctionPlaceholder"]], "InlineFormula",
+        FontFamily->"Source Sans Pro",ExpressionUUID->
+        "82b8adb3-2758-4533-9aec-2d582edf5e24"]], "SeeAlso",ExpressionUUID->
+        "474b33ba-ca53-4de5-bc8a-83fcbba4466f"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"3c54e196-c205-4c54-87ff-\
+3a22f84243c3"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"5bc3ccf3-65a3-40a2-ab50-420f86e3fca2"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 557},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"MakeMaze",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> $Failed, "ShowCitation" -> 
+  False, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2023, 8, 8, 16, 5, 5.0642690}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "PeterBurbery`NewMazePaclet`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ New Maze Paclet Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/NewMazePaclet", "status" -> "None", "summary" -> 
+    "MakeMaze[g] makes a maze out of the graph g.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "MakeMaze", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> "MakeMaze", "type" -> "Symbol", 
+    "uri" -> "PeterBurbery/NewMazePaclet/ref/MakeMaze"}},
+CellContext->"Global`",
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.3 for Microsoft Windows (64-bit) (June 3, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"e0265f9d-8892-43ef-8f09-4e87021ad2bf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5436, 144, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"28295cd6-7918-4e8a-b01c-18846b0a4233",
+   CellTags->"PrimaryExamplesSection",
+   CellID->130807863]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9812, 256}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 3435, 79, 70, "AnchorBarGrid",ExpressionUUID->"8c4e2dcb-b824-433e-8c4c-cebd978062c0",
+ CellID->1],
+Cell[4018, 102, 109, 0, 70, "ContextNameCell",ExpressionUUID->"60fbd270-6b3c-47d7-ac0d-bab08d6b5e44"],
+Cell[CellGroupData[{
+Cell[4152, 106, 551, 14, 70, "ObjectNameGrid",ExpressionUUID->"774efdb6-8dd9-476c-a4b5-2f7c97e04b7a"],
+Cell[4706, 122, 693, 17, 70, "Usage",ExpressionUUID->"a3e6e1dd-5837-4dc2-a81e-5d9f47df3f1b",
+ CellID->461648265]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5436, 144, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"28295cd6-7918-4e8a-b01c-18846b0a4233",
+ CellTags->"PrimaryExamplesSection",
+ CellID->130807863],
+Cell[6859, 183, 217, 4, 70, "Input",ExpressionUUID->"255ec9ea-aefd-444c-9b37-2636168af543",
+ CellID->124374320]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[7194, 192, 699, 18, 70, "SeeAlsoSection",ExpressionUUID->"3c54e196-c205-4c54-87ff-3a22f84243c3"],
+Cell[7896, 212, 78, 0, 70, "FooterCell",ExpressionUUID->"5bc3ccf3-65a3-40a2-ab50-420f86e3fca2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

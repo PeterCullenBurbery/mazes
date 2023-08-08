@@ -14,13 +14,24 @@ PacletObject[
       {
         "Kernel",
         "Root" -> "Kernel",
-        "Context" -> {"PeterBurbery`NewMazePaclet`"}
+        "Context" -> {"PeterBurbery`NewMazePaclet`"},
+        "Symbols" -> {
+          "PeterBurbery`NewMazePaclet`EquilateralTriangleGraph",
+          "PeterBurbery`NewMazePaclet`HexagonalGridGraph",
+          "PeterBurbery`NewMazePaclet`MakeMaze",
+          "PeterBurbery`NewMazePaclet`PositiveIntegerQ",
+          "PeterBurbery`NewMazePaclet`ReduceGraph",
+          "PeterBurbery`NewMazePaclet`SolveMaze",
+          "PeterBurbery`NewMazePaclet`TriangularGridGraph",
+          "PeterBurbery`NewMazePaclet`VertexCoordinateList"
+        }
       },
       {
         "Documentation",
         "Root" -> "Documentation",
         "Language" -> "English"
       }
-    },"Loading" -> "Startup"
+    },
+    "Loading" -> "Startup"
   |>
 ]

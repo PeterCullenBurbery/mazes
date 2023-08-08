@@ -1,0 +1,209 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7975,        201]
+NotebookOptionsPosition[      6121,        161]
+NotebookOutlinePosition[      6521,        177]
+CellTagsIndexPosition[      6478,        174]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`NewMazePaclet`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.90051299224806*^9, 3.900512997902796*^9}, {
+  3.900513041840275*^9, 3.9005130457768674`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"c57764e6-dfc8-4a2a-8c0f-3f40c72182fb"],
+
+Cell[BoxData["PeterBurbery`"], "Input",
+ CellChangeTimes->{{3.90051303590693*^9, 
+  3.900513039972711*^9}},ExpressionUUID->"f0843ffb-c9ef-4c22-aa23-\
+d808eb76a906"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<PeterBurbery`NewMazePaclet`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.900512985867133*^9, 3.900512986460847*^9}, {
+  3.9005130570564213`*^9, 3.900513057908408*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"eab34597-45d9-4eaf-aae1-e38e5f9030d6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"EquilateralTriangleGraph\"\>", 
+   ",", "\<\"HexagonalGridGraph\"\>", ",", "\<\"MakeMaze\"\>", 
+   ",", "\<\"PositiveIntegerQ\"\>", ",", "\<\"ReduceGraph\"\>", 
+   ",", "\<\"SolveMaze\"\>", ",", "\<\"TriangularGridGraph\"\>", 
+   ",", "\<\"VertexCoordinateList\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.9005130582646265`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"91b1bbb8-3fa3-470c-80a6-b268e799602e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Information", "[", 
+    RowBox[{"#", ",", "\"\<Usage\>\""}], "]"}], "&"}], "/@", 
+  RowBox[{
+  "Names", "[", "\"\<PeterBurbery`NewMazePaclet`*\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.900513059772451*^9, 3.900513066929755*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"c3ea7b82-91f3-4cd4-92cd-5c3d1ac60214"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"EquilateralTriangleGraph[n] creates an equilateral triangle \
+graph with n vertices along each of the three edges.\"\>", 
+   ",", "\<\"HexagonalGridGraph[{w,h}] creates a hexagonal grid graph that is \
+w hexagons wide and h hexagons high.\"\>", 
+   ",", "\<\"MakeMaze[g] makes a maze out of the graph g.\"\>", 
+   ",", "\<\"PositiveIntegerQ[n] tests if n is a strictly positive integer.\"\
+\>", ",", "\<\"ReduceGraph[ugraph] contracts vertices with a vertex degree of \
+2  in the undirected graph ugraph .\\nReduceGraph[dgraph] contracts vertices \
+with an in degree of 1 and out degree of 1 in the directed graph dgraph.\"\>",
+    ",", "\<\"SolveMaze[g] solves the maze represented by the graph g.\"\>", 
+   ",", "\<\"TriangularGridGraph[{m,n}] creates a triangular grid graph that \
+is m units wide and n units high.\"\>", 
+   ",", "\<\"VertexCoordinateList[g] returns a list of the coordinates of the \
+vertices of the graph g.\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.9005130675398583`*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"79a824e3-fdbd-4f21-9224-2d70dd0219a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AllTrue", "[", 
+   RowBox[{
+    RowBox[{"StringFreeQ", "[", 
+     RowBox[{"#", ",", "\"\<PeterBurbery`NewMazePaclet`\>\""}], "]"}], "&"}], 
+   "]"}], "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Information", "[", 
+     RowBox[{"#", ",", "\"\<Usage\>\""}], "]"}], "&"}], "/@", 
+   RowBox[{"Names", "[", "\"\<PeterBurbery`NewMazePaclet`*\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9005131121707835`*^9, 3.9005131295156555`*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"482e186e-7d2f-49af-a84e-89280e18a71a"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.900513130165298*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"ec7c212a-96db-4ae5-8cd1-938e76dba070"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AllTrue", "[", 
+   RowBox[{
+    RowBox[{"StringFreeQ", "[", 
+     RowBox[{
+      RowBox[{"Information", "[", 
+       RowBox[{"#", ",", "\"\<Usage\>\""}], "]"}], ",", 
+      "\"\<PeterBurbery`NewMazePaclet`\>\""}], "]"}], "&"}], "]"}], "[", 
+  RowBox[{"Names", "[", "\"\<PeterBurbery`NewMazePaclet`*\>\"", "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9005131121707835`*^9, 3.900513149125716*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"bf941c8e-91a9-4271-8d2b-74ac91b5cfc5"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.9005131501031327`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"698a5cd7-bb5a-4a33-a2bf-d1c0fe88b5ec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", 
+  RowBox[{"functionWithoutUsageMessage", ",", "\"\<Usage\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9005130745984664`*^9, 3.9005130829712615`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"05e473c0-ac34-491f-b9c9-cce869089306"],
+
+Cell[BoxData["\<\"Global`functionWithoutUsageMessage\"\>"], "Output",
+ CellChangeTimes->{{3.900513083255505*^9, 3.9005130939695745`*^9}},
+ CellLabel->"Out[42]=",ExpressionUUID->"b411bb89-3d9d-4609-8587-63f388688f59"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"functionWithoutUsageMessage", "[", "n_", "]"}], ":=", 
+  "n"}]], "Input",
+ CellChangeTimes->{{3.9005130882181377`*^9, 3.900513091643777*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"62025fae-b4ca-4d7c-884f-42157805eeee"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", 
+  RowBox[{"TriangularGridGraph", ",", "\"\<Usage\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.9005133702972517`*^9, 3.900513377133405*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"d82c3a9e-d8b7-4052-aa22-cf804c75463d"],
+
+Cell[BoxData["\<\"TriangularGridGraph[{m,n}] creates a triangular grid graph \
+that is m units wide and n units high.\"\>"], "Output",
+ CellChangeTimes->{3.900513377419869*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"349fa7b5-8a60-4602-9f3d-35bc99f215cb"]
+}, Open  ]]
+},
+WindowSize->{478, 525.5},
+WindowMargins->{{Automatic, -4.5}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fe58edd9-231d-4f1e-81b3-af5ecd9ad30c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 287, 4, 28, "Input",ExpressionUUID->"c57764e6-dfc8-4a2a-8c0f-3f40c72182fb"],
+Cell[848, 26, 164, 3, 28, "Input",ExpressionUUID->"f0843ffb-c9ef-4c22-aa23-d808eb76a906"],
+Cell[CellGroupData[{
+Cell[1037, 33, 289, 4, 28, "Input",ExpressionUUID->"eab34597-45d9-4eaf-aae1-e38e5f9030d6"],
+Cell[1329, 39, 453, 8, 71, "Output",ExpressionUUID->"91b1bbb8-3fa3-470c-80a6-b268e799602e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1819, 52, 359, 8, 48, "Input",ExpressionUUID->"c3ea7b82-91f3-4cd4-92cd-5c3d1ac60214"],
+Cell[2181, 62, 1123, 17, 432, "Output",ExpressionUUID->"79a824e3-fdbd-4f21-9224-2d70dd0219a1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3341, 84, 552, 14, 86, "Input",ExpressionUUID->"482e186e-7d2f-49af-a84e-89280e18a71a"],
+Cell[3896, 100, 152, 2, 32, "Output",ExpressionUUID->"ec7c212a-96db-4ae5-8cd1-938e76dba070"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4085, 107, 513, 12, 86, "Input",ExpressionUUID->"bf941c8e-91a9-4271-8d2b-74ac91b5cfc5"],
+Cell[4601, 121, 154, 2, 32, "Output",ExpressionUUID->"698a5cd7-bb5a-4a33-a2bf-d1c0fe88b5ec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4792, 128, 277, 5, 28, "Input",ExpressionUUID->"05e473c0-ac34-491f-b9c9-cce869089306"],
+Cell[5072, 135, 216, 2, 32, "Output",ExpressionUUID->"b411bb89-3d9d-4609-8587-63f388688f59"]
+}, Open  ]],
+Cell[5303, 140, 255, 5, 28, "Input",ExpressionUUID->"62025fae-b4ca-4d7c-884f-42157805eeee"],
+Cell[CellGroupData[{
+Cell[5583, 149, 264, 4, 28, "Input",ExpressionUUID->"d82c3a9e-d8b7-4052-aa22-cf804c75463d"],
+Cell[5850, 155, 255, 3, 52, "Output",ExpressionUUID->"349fa7b5-8a60-4602-9f3d-35bc99f215cb"]
+}, Open  ]]
+}
+]
+*)
+
